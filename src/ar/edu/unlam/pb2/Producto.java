@@ -16,6 +16,14 @@ public class Producto {
 		this.crecer=crecer;
 	}
 
+	public Integer getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -55,6 +63,11 @@ public class Producto {
 			return false;
 		Producto other = (Producto) obj;
 		return Objects.equals(codigo, other.codigo);
+	}
+
+	@Override
+	public String toString() {
+		return "Producto [nombre=" + nombre + ", precio=" + precio + ", crecer=" + crecer + ", codigo=" + codigo + "]";
 	}
 
 	
